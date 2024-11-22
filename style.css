@@ -70,11 +70,11 @@
       text-align: center;
       color: white;
 
-        nav ul {
-            padding-inline: 4rem;
-            display: flex;
+    nav ul {
+     padding-inline: 4rem;
+     display: flex;
 
-            gap: 2rem;
+     gap: 2rem;
     }
     
     nav li {
@@ -95,14 +95,16 @@
     main {
       padding: 20px;
 
-        display: flex;
-        gap: 1.5rem;
+      display: flex;
+      gap: 1.5rem;
     }
     
     #content {
      padding: 20px;
-        flex-flow: column nowrap;
-        gap: 1,5rem;
+
+     display: flex;
+     flex-flow: column nowrap;
+     gap: 1.5rem;
     }
     
     aside {
@@ -115,15 +117,17 @@
     
     @media screen and (max-width: 1200px) {
         main {
-        flex-flow: column nowrap;
+            flex-flow: column nowrap;
         }
         main aside {
             align-self: center;
-                @media screen and (max-width: 760px) {
-        nav ul {
-       justify-content: center;
         }
-                    main aside {
-                        align-self: stretch;
-      }
     }
+    @media screen and (max-width: 760px) {
+      nav ul {
+          justify-content: center;
+     }
+      main aside {
+          align-self: stretch;
+   }
+}
