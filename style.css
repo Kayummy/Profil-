@@ -69,6 +69,12 @@
       background: var(--main-color);
       text-align: center;
       color: white;
+
+        nav ul {
+            padding-inline: 4rem;
+            display: flex;
+
+            gap: 2rem;
     }
     
     nav li {
@@ -88,30 +94,36 @@
     
     main {
       padding: 20px;
-    
-      overflow: auto;
+
+        display: flex;
+        gap: 1.5rem;
     }
     
     #content {
-      float: left;
-      width: 75%;
+     padding: 20px;
+        flex-flow: column nowrap;
+        gap: 1,5rem;
     }
     
     aside {
-      float: right;
-      width: 25%;
-    
-      padding-left: 20px;
+     flex: 1;
     }
     
     header {
       display: inline;
     }
     
-    @media screen and (max-width: 1000px) {
-      #content,
-      aside {
-        width: 100%;
-        padding: 0;
+    @media screen and (max-width: 1200px) {
+        main {
+        flex-flow: column nowrap;
+        }
+        main aside {
+            align-self: center;
+                @media screen and (max-width: 760px) {
+        nav ul {
+       justify-content: center;
+        }
+                    main aside {
+                        align-self: stretch;
       }
     }
